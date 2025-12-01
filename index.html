@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Tin Học - Chọn Bài Thi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-section">
+            <img src="images/iig_viet_nam_logo.png" alt="IIG Việt Nam Logo" class="logo">
+            <h1>Workshop Tin Học 💡</h1>
+            <p class="subtitle">Chọn bài thi thử bạn muốn thực hành</p>
+        </div>
+
+        <div class="test-sections">
+            
+            <div class="test-card" data-subject="ic3_gs6">
+                <div class="card-header">
+                    <i class="fas fa-desktop"></i>
+                    <h2>IC3 GS6</h2>
+                    <p>Chuẩn Quốc tế Tin học</p>
+                </div>
+                <div class="card-body">
+                    <button onclick="startTest('ic3_gs6', 'level_1')">Level 1: Cơ bản</button>
+                    <button onclick="startTest('ic3_gs6', 'level_2')">Level 2: Nâng cao</button>
+                    <button onclick="startTest('ic3_gs6', 'level_3')">Level 3: Chuyên sâu</button>
+                </div>
+            </div>
+
+            <div class="test-card" data-subject="ic3_gs6_spark">
+                <div class="card-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h2>IC3 GS6 Spark</h2>
+                    <p>Dành cho học sinh, sinh viên</p>
+                </div>
+                <div class="card-body">
+                    <button onclick="startTest('ic3_gs6_spark', 'level_1')">Level 1: Cơ bản</button>
+                    <button onclick="startTest('ic3_gs6_spark', 'level_2')">Level 2: Nâng cao</button>
+                    <button onclick="startTest('ic3_gs6_spark', 'level_3')">Level 3: Chuyên sâu</button>
+                </div>
+            </div>
+
+            <div class="test-card single-level-card" data-subject="nang_luc_so">
+                <div class="card-header">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>Năng Lực Số</h2>
+                    <p>Đánh giá kỹ năng thời đại số</p>
+                </div>
+                <div class="card-body">
+                    <button onclick="startTest('nang_luc_so')">Làm Bài Thi Thử NLS</button>
+                </div>
+            </div>
+
+            <div class="test-card single-level-card" data-subject="gen_ai">
+                <div class="card-header">
+                    <i class="fas fa-brain"></i>
+                    <h2>GenAI (AI Tạo Sinh)</h2>
+                    <p>Kiến thức nền tảng và ứng dụng</p>
+                </div>
+                <div class="card-body">
+                    <button onclick="startTest('gen_ai')">Làm Bài Thi Thử GenAI</button>
+                </div>
+            </div>
+
+            <div class="test-card mos-card" data-subject="mos">
+                <div class="card-header">
+                    <i class="fas fa-file-excel"></i>
+                    <h2>MOS (Thực hành)</h2>
+                    <p>Tải đề cố định để thực hành</p>
+                </div>
+                <div class="card-body">
+                    <button onclick="startMOS('Excel')">Excel</button>
+                    <button onclick="startMOS('Word')">Word</button>
+             
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

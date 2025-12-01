@@ -1,0 +1,230 @@
+/* Reset cơ bản và font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Container chính */
+.container {
+    max-width: 1400px;
+    width: 95%;
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* Hiệu ứng Fade In */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Phần tiêu đề và logo */
+.header-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+h1 {
+    color: #007bff;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 2.5em;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 1.2em;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container cho các thẻ bài thi */
+.test-sections {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Thẻ bài thi (Card) */
+.test-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.test-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.card-header i {
+    font-size: 2.2em;
+    color: #007bff;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.card-header h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin: 8px 0 5px;
+    font-weight: 600;
+}
+
+.card-header p {
+    font-size: 0.9em;
+    color: #888;
+    margin: 0;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-body button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #eaf5ff;
+    color: #007bff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-body button:last-child {
+    margin-bottom: 0;
+}
+
+.card-body button:hover {
+    background-color: #007bff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Định kiểu cho các thẻ 1 cấp độ (NLS, GenAI) */
+.single-level-card .card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-grow: 1;
+}
+.single-level-card .card-body button {
+    margin-top: 20px;
+    max-width: 90%;
+}
+
+
+/* --- CÁC MÀU SẮC ĐẶC TRƯNG --- */
+
+/* Năng Lực Số (Xanh lá) */
+.test-card[data-subject="nang_luc_so"] .card-body button {
+    background-color: #28a745; 
+    color: white;
+}
+.test-card[data-subject="nang_luc_so"] .card-body button:hover {
+    background-color: #218838;
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+/* GenAI (Tím) */
+.test-card[data-subject="gen_ai"] .card-header {
+    border-bottom: 3px solid #6f42c1;
+}
+.test-card[data-subject="gen_ai"] .card-header i {
+    color: #6f42c1;
+}
+.test-card[data-subject="gen_ai"] .card-body button {
+    background-color: #6f42c1;
+    color: white;
+}
+.test-card[data-subject="gen_ai"] .card-body button:hover {
+    background-color: #5a3699;
+    box-shadow: 0 5px 15px rgba(111, 66, 193, 0.3);
+}
+
+/* MOS (Đỏ/Cam) */
+.test-card.mos-card .card-header {
+    border-bottom: 3px solid #d9534f;
+}
+.test-card.mos-card .card-header i {
+    color: #d9534f;
+}
+.test-card.mos-card .card-body button {
+    background-color: #ffeaea;
+    color: #d9534f;
+}
+
+.test-card.mos-card .card-body button:hover {
+    background-color: #d9534f;
+    color: white;
+    box-shadow: 0 5px 15px rgba(217, 83, 79, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1300px) {
+    .test-card {
+        width: 300px;
+    }
+}
+@media (max-width: 1000px) {
+    .test-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+    .test-card {
+        width: 90%;
+        max-width: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        padding: 25px 15px;
+    }
+}

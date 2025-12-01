@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu ý Thực hành MOS</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Đảm bảo style này được thêm vào style.css hoặc giữ lại ở đây */
+        .body-notice {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef2f6;
+            margin: 0;
+            padding: 0;
+        }
+        .notice-container {
+            max-width: 900px;
+            padding: 50px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        .notice-header {
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        .notice-header h2 {
+            font-weight: 700;
+            color: #d9534f;
+            font-size: 2em;
+        }
+        
+        .instruction-highlight {
+            font-weight: 700;
+            color: #d9534f;
+            padding: 15px;
+            display: block;
+            margin: 20px 0;
+            border: 2px solid #d9534f;
+            border-radius: 8px;
+            background-color: #fff0f0;
+            text-align: center;
+        }
+
+        /* Định kiểu cho nội dung đề bài được chèn */
+        #content-area ol, #content-area ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        #content-area li {
+            margin-bottom: 12px;
+            line-height: 1.5;
+        }
+        #content-area h3 {
+             font-size: 1.5em;
+             color: #333;
+             margin-top: 0;
+        }
+    </style>
+    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const fileUrl = urlParams.get('file');
+        const contentHtml = urlParams.get('content');
+
+        // Hàm kích hoạt tải file
+        function startDownload() {
+            if (fileUrl) {
+                // Kích hoạt tải file
+                window.location.href = fileUrl;
+            }
+        }
+        
+        // Hàm hiển thị nội dung được truyền qua URL
+        function loadContent() {
+            const contentArea = document.getElementById('content-area');
+            
+            if (contentHtml) {
+                // Giải mã và chèn nội dung vào
+                contentArea.innerHTML = decodeURIComponent(contentHtml);
+            }
+            
+            // Tự động tải file ngay khi nội dung được tải
+            startDownload();
+        }
+
+        window.onload = loadContent;
+    </script>
+</head>
+<body class="body-notice">
+    <div class="notice-container">
+        <div class="notice-header">
+            <h2>ĐỀ THI VÀ HƯỚNG DẪN THỰC HÀNH</h2>
+            <p style="color: #0056b3; font-weight: 600;">File cần thực hành đang được tải xuống máy tính của bạn.</p>
+        </div>
+        
+        <div id="content-area">
+            </div>
+        
+        <p class="instruction-highlight">
+            Vui lòng **mở file đã tải xuống** (thường ở thư mục Downloads) để bắt đầu thực hành.
+        </p>
+
+        <div style="text-align: center; margin-top: 30px;">
+             <button onclick="window.location.href='index.html'" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                 Quay lại Trang Chọn Bài Thi
+             </button>
+        </div>
+    </div>
+</body>
+</html>

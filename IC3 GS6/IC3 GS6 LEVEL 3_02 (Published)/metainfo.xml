@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<presentation availableOffline="1" guid="B9D7DBC7-AD94-4E49-8899-AF9EE72A5F62" version="0">
+	<info>
+		<title>IC3 GS6 LEVEL 3_02</title>
+		<description/>
+	</info>
+	<files index="id23" thumbnail="id19" totalSize="2424338">
+		<file id="id0">data/apple-touch-icon.png</file>
+		<file id="id1">data/browsersupport.js</file>
+		<file id="id2">data/favicon.ico</file>
+		<file id="id3">data/fonts/fnt0.woff</file>
+		<file id="id4">data/fonts/fnt1.woff</file>
+		<file id="id5">data/fonts/fnt2.woff</file>
+		<file id="id6">data/fonts/fnt3.woff</file>
+		<file id="id7">data/fonts/fnt4.woff</file>
+		<file id="id8">data/html5-unsupported.html</file>
+		<file id="id9">data/html5.png</file>
+		<file id="id10">data/images/img-63a6958de320d8fd592670813e8507063f206eab.jpg</file>
+		<file id="id11">data/images/img-7b27b090907c09f61f36dbac9cbee0e6576ad657.PNG</file>
+		<file id="id12">data/images/img-bf63d16f939bbd4e2ecd4057e487c7ebad20f8a4.png</file>
+		<file id="id13">data/images/img-cb6b4eb147ea0085e5f2baac99172a96b6fbb984.PNG</file>
+		<file id="id14">data/images/img-d4bb8231bf187e4e407748fbdcbf335a8de16b3c.png</file>
+		<file id="id15">data/images/img-e60906ca4138b48ff9ade4a255650dff77857370.png</file>
+		<file id="id16">data/images/img-eb3247155833cc83173c3ca4b36a75ba4333dc4a.png</file>
+		<file id="id17">data/ismplayer/app_store2x.png</file>
+		<file id="id18">data/ismplayer/play.svg</file>
+		<file id="id19">data/ismplayer/preview.png</file>
+		<file id="id20">data/ismplayer/style.css</file>
+		<file id="id21">data/ismplayer/style_mini.css</file>
+		<file id="id22">data/player.js</file>
+		<file id="id23">index.html</file>
+		<file id="id24">ismplayer.html</file>
+		<file id="id25">preview.png</file>
+	</files>
+</presentation>
+

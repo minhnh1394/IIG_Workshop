@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<presentation availableOffline="1" guid="ACDF507A-BD2C-422B-A118-7724449E1D0E" version="0">
+	<info>
+		<title>IC3 GS6 Spark LEVEL 1_05</title>
+		<description/>
+	</info>
+	<files index="id24" thumbnail="id20" totalSize="2704322">
+		<file id="id0">data/apple-touch-icon.png</file>
+		<file id="id1">data/browsersupport.js</file>
+		<file id="id2">data/favicon.ico</file>
+		<file id="id3">data/fonts/fnt0.woff</file>
+		<file id="id4">data/fonts/fnt1.woff</file>
+		<file id="id5">data/fonts/fnt2.woff</file>
+		<file id="id6">data/fonts/fnt3.woff</file>
+		<file id="id7">data/fonts/fnt4.woff</file>
+		<file id="id8">data/html5-unsupported.html</file>
+		<file id="id9">data/html5.png</file>
+		<file id="id10">data/images/img-337e72e44799e148b9120e778590cc8d77130eff.png</file>
+		<file id="id11">data/images/img-4bad45dfec1d6e8378535b980f81bf242f132689.png</file>
+		<file id="id12">data/images/img-54c1fa9a6db8dfea9473aa3ee1debaae4efc772d.jpg</file>
+		<file id="id13">data/images/img-6119dd5112205d3856e179c64d547af3f05ac292.jpg</file>
+		<file id="id14">data/images/img-63a6958de320d8fd592670813e8507063f206eab.jpg</file>
+		<file id="id15">data/images/img-78197d3e3c961b92aaef6354f09ccc787843b56a.jpg</file>
+		<file id="id16">data/images/img-97064592f7b28cce09a8974f677964deb0352fa2.png</file>
+		<file id="id17">data/images/img-bd43ad2132a6208b43d8dde946205086426d42c5.jpg</file>
+		<file id="id18">data/ismplayer/app_store2x.png</file>
+		<file id="id19">data/ismplayer/play.svg</file>
+		<file id="id20">data/ismplayer/preview.png</file>
+		<file id="id21">data/ismplayer/style.css</file>
+		<file id="id22">data/ismplayer/style_mini.css</file>
+		<file id="id23">data/player.js</file>
+		<file id="id24">index.html</file>
+		<file id="id25">ismplayer.html</file>
+		<file id="id26">preview.png</file>
+	</files>
+</presentation>
+

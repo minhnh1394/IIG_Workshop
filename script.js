@@ -57,7 +57,7 @@ function startMOS(software) {
     // 1. Xác định tên tệp và nội dung yêu cầu
     if (software === 'Excel') {
         fileName = `MOS_Excel_${fixedTestNumber}`;
-        fileExtension = 'xlsx';
+        fileExtension = 'xlsm';
         requestContent = MOS_GENERAL_NOTICE('Excel');
     } else if (software === 'Word') {
         fileName = `MOS_Word_${fixedTestNumber}`;
@@ -147,4 +147,5 @@ function startTest(subject, level) {
     alert(`Đang mở bài thi thử ${displayName} (Mã bài: ${selectedFolder}). Chúc bạn làm bài tốt!`);
     
     window.location.href = finalURL;
+
 }
